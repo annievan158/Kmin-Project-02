@@ -399,7 +399,7 @@ p.card-title {
 }
 
 span.card-title {
-  color: rgba(0, 0, 0, 0.6);
+  color: black;
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;

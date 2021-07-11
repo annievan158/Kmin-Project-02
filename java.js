@@ -16,20 +16,20 @@ $(document).ready(function(){
   });
 
   // hover tab
-let dropdown = $('.our-product-info');
-let i ; 
-  for (i = 0; i < dropdown.length; i++){
-    dropdown[i].click(function(){
-      this.toggleClass('.active');
-      let content = this.nextElementSibling;
-      if(content.show()){
-        content.hide();
-      }
-      else{
-        content.show();
-      }
-    })
-  }
+// let dropdown = $('.our-product-info');
+// let i ; 
+//   for (i = 0; i < dropdown.length; i++){
+//     dropdown[i].click(function(){
+//       this.toggleClass('.active');
+//       let content = this.nextElementSibling;
+//       if(content.show()){
+//         content.hide();
+//       }
+//       else{
+//         content.show();
+//       }
+//     })
+//   }
 
   // Collapsed Sidepanel
 // function openNav() {
@@ -54,20 +54,20 @@ let i ;
 
 
 
-// let dropdown = document.getElementsByClassName("our-product-info");
-// let i;
+let dropdown = document.getElementsByClassName("our-product-info");
+let i;
 
-// for (i = 0; i < dropdown.length; i++) {
-//   dropdown[i].addEventListener("click", function() {
-//     this.classList.toggle("active");
-//     let content = this.nextElementSibling;
-//     if (content.style.display === "block") {
-//       content.style.display = "none";
-//     } else {
-//       content.style.display = "block";
-//     }
-//   });
-// }
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    let content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
 
 
 // Slide show 
