@@ -1,5 +1,5 @@
-$(document).ready(function(){
 
+$(document).ready(function(){
   $('#tabs-nav li:first-child').addClass('active');
   $('.content-tab').hide();
   $('.content-tab:first').show();
@@ -31,7 +31,27 @@ let i ;
     })
   }
 
+  // Collapsed Sidepanel
+// function openNav() {
+//   $("#mySidepanel").show();
+//   $("#mySidepanel").css("width", "50%");
+// }
+
+// function closeNav() {
+//   $("#mySidepanel").hide();
+//   $("#mySidepanel").css("width", "0");
+// }
+
+// function openNavLeft() {
+//   $("mySidepanelLeft").css("width", "250px");
+// }
+
+// function closeNavLeft() {
+//   $("mySidepanelLeft").css("width", "0");
+// }
+
 });
+
 
 
 // let dropdown = document.getElementsByClassName("our-product-info");
