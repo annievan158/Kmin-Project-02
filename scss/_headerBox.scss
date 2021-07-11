@@ -1,0 +1,39 @@
+/* Header box */
+@import 'mixin'; 
+@import 'variable';
+.header-menu-box{
+    position: absolute;
+    top: $header-menu-box;
+    height: fit-content;
+    background-color: $white-bgcolor;
+    transition: .2s;
+    display: none;
+    align-items: center;
+    left: 0%;
+    right: 0%;
+    padding: 10px;
+}
+.box-menu{
+    @include flex-3fix;
+    width: 100%;
+}
+
+.box-menu-wrapper{
+    @include flex-config(
+        flex-3fix, 
+        $flex-direction:column
+    );
+    width: 15%;
+    &:hover{
+        border: 1px solid black;
+    }
+}
+.box-img{
+    width: 80%;
+    object-fit: cover;
+}
+.box-menu-text{
+    font-size: 10px;
+    color: $black-color;
+    text-decoration: none;
+}

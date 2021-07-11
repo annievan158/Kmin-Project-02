@@ -1,0 +1,86 @@
+@import 'variable';
+@import 'mixin'; 
+
+/* Footer */
+.footer{
+    background-color: $black-bgcolor;
+    @include flex-3fix;
+    flex-direction: column;
+    // margin: 50px 0px;
+    width: 100%;
+    @include tablet{
+        display: flex;
+        margin: auto;
+    }
+    @include mobile{
+        display: flex;
+        margin: auto;
+    }
+}
+
+.footer-logo-img{
+    width: 100%;
+    // height: auto;
+    color: $white-color;
+}
+.icon-margin{
+    margin-right: 20px;
+}
+.span-padding{
+    padding: 10px;
+}
+
+.footer-company-name{
+    color: $white-color;
+    @include tablet{
+        display: none;
+    }
+    @include mobile{
+        display: none;
+    }
+}
+
+.footer-address,
+.footer-phone, 
+.footer-mail, 
+.footer-web{
+    @include flex-3fix;
+    color: $white-color;
+    @include tablet{
+        display: none;
+    }
+    @include mobile{
+        display: none;
+    }
+}
+/* Fix icon */
+.icon-fix{
+    @include flex-3fix;
+    position: fixed;
+    top: 90%;
+    right: 1%;
+    background-color: $gray-bgcolor;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    &:hover{
+        background-color: black;
+    }
+    @include tablet{
+        height: 30px;
+        width: 30px;
+        top: 90%;
+        right: 5%;
+    }
+    @include mobile{
+        top: 90%;
+        right: 5%;
+        height: 30px;
+        width: 30px;
+    }
+}
+.fas.fa-caret-up{
+    color: $white-color;
+    font-size: $font-size;
+}
+

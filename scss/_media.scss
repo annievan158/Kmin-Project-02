@@ -1,0 +1,244 @@
+@import 'variable';
+@import 'mixin'; 
+
+
+.btn-mobile-block{
+    display: flex;
+    @include flex-config(
+        $flex-direction: column,
+        $justify-content: flex-start,
+    );
+    padding: 10px;
+}
+
+.page-container{
+    @include mobile{
+        padding: 0px;
+    }
+    @include tablet{
+        padding: 0px;
+    }
+    @include desktop {
+        padding: 20px;
+    }
+
+}
+.header, .header-logo{
+    @include mobile {
+        width: 100%;
+    }
+    @include tablet{
+        width: 100%;
+    }
+}
+
+
+.dot-banner{
+    @include desktop{
+        padding: 10px;
+        
+    }
+    @include tablet{
+        padding: 10px;
+        font-size: 15px;
+    }
+    @include mobile{
+        font-size: 5px;
+        padding: 5px;
+    }
+
+}
+
+.header-menu, .header-btn, .btn-icon-bag{
+    @include mobile{
+        display: none;
+    }
+    @include tablet{
+        display: none;
+    }
+
+}
+
+.new-arrivals-top{
+    @include mobile{
+        text-align: center;
+    }
+    @include tablet{
+        text-align: center;
+    }
+
+}
+.new-arrivals-products{
+    @include mobile{
+        flex-wrap: wrap;
+    }
+    @include tablet{
+        flex-wrap: wrap;
+    }
+
+}
+.body-visit-store{
+    @include mobile{
+        height: auto;
+    }
+    @include tablet{
+        height: auto;
+    }
+
+}
+
+.best-seller-btn{
+    @include mobile{
+        display: none;
+    }
+    @include tablet{
+        display: none;
+    }
+
+}
+.new-products-list{
+    @include mobile{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    @include tablet{
+        width: 50%;
+    }
+}
+.best-seller-list{
+    @include mobile{
+        width: 100%;
+        overflow-x:auto;
+        overflow-y:hidden;
+        min-width: 80%;
+    }
+    @include  tablet{
+        width: 100%;
+        overflow-x:auto;
+        overflow-y:hidden;
+        min-width: 50%;
+    }
+}
+.body-news{
+    @include mobile{
+        display: flex;
+        flex-direction: column;
+        margin: 0px;
+    }
+    @include tablet{
+        display: flex;
+        flex-direction: column;
+        margin: 0px;
+    }
+}
+.news-left{
+    @include mobile{
+        width: 100%;
+        margin-left: 10px;
+    }
+    @include tablet{
+        width: 100%;
+        margin-left: 10px;
+    }
+}
+.news-right{
+    @include mobile{
+        width: 100%;
+        margin: auto;
+    }
+    @include tablet{
+        width: 100%;
+        margin-left: -10px;
+        margin-top: 10px;
+    }
+}
+.news-heading{
+    @include mobile{
+        font-size: 30px;
+    }
+    @include tablet{
+        font-size: 30px;
+    }
+
+}
+.news-info{
+    @include mobile{
+        display: none;
+    }
+    @include tablet{
+        display: none;
+    }
+}
+.news-btn{
+    @include mobile{
+        font-size: 15px;
+        font-weight: bold;
+    }
+    @include tablet{
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+}
+.service{
+    @include mobile{
+        flex-wrap: wrap;
+    }
+    @include tablet{
+        flex-wrap: wrap;
+    }
+
+}
+.service-list{
+    @include mobile{
+        width: 49%;
+        &:nth-child(2){
+            border-right: 1px solid rgb(186,186,186);
+        }
+    }
+    @include tablet{
+        width: 49%;
+        &:nth-child(2){
+            border-right: 1px solid rgb(186,186,186);
+        }
+    }
+
+    
+}
+
+.visit-heading{
+    @include mobile{
+        font-size: 30px;
+    }
+    @include tablet{
+        font-size: 30px;
+    }
+
+}
+
+.icon-fix{
+    @include mobile{
+        height: 30px;
+        width: 30px;
+    }
+    @include tablet{
+        height: 30px;
+        width: 30px;
+    }
+
+}
+.form{
+    @include mobile {
+        min-width: 100%;
+        margin: 0;
+    }
+}
+
+.best-seller-products{
+    @include tablet{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+}
+
+

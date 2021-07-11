@@ -1,0 +1,81 @@
+@import 'variable';
+// Flexbox
+@mixin flex-config($justify-content: false, $flex: false, $flex-direction: false, $align-items: false) {
+    // display: flex;
+    
+    @if $justify-content != false {
+      justify-content: $justify-content;
+    }
+    
+    @if $flex != false {
+      flex: $flex;
+    }
+    
+    @if $flex-direction != false {
+      flex-direction: $flex-direction;
+    }
+    
+    @if $align-items != false {
+      align-items: $align-items;
+    }
+};
+@mixin flex-3fix{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin  btn {
+    font-size: $font-size;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+  
+}
+
+@mixin img-bg {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+
+@mixin heading-text {
+  font-size: $heading-size;
+  font-weight: bold;
+}
+
+@mixin  text-link {
+  color: blue;
+  text-decoration: none;
+}
+
+@mixin  text-tagline (
+  $font-size, 
+  $line-height, 
+  $-webkit-line-clamp, 
+  $over-flow, 
+  $width) {
+    font-size: $font-size;
+    line-height: $line-height;
+    -webkit-line-clamp: $-webkit-line-clamp;
+    overflow: $over-flow;
+    width: $width;
+}
+
+@mixin mobile {
+    @media (max-width: $mobile-width){
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (min-width: $mobile-width) and (max-width: $tablet-width){
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: $desktop-width){
+        @content;
+    }
+}

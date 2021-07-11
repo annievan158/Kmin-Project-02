@@ -1,0 +1,369 @@
+@media (max-width: 440px) {
+  .header-display {
+    display: none;
+  }
+}
+@media (min-width: 440px) and (max-width: 992px) {
+  .header-display {
+    display: none;
+  }
+}
+
+@media (max-width: 440px) {
+  .body-banner-desktop {
+    display: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  .body-banner-mobile {
+    display: none;
+  }
+}
+@media (min-width: 440px) and (max-width: 992px) {
+  .body-banner-mobile {
+    display: none;
+  }
+}
+
+@media (max-width: 440px) {
+  .banner-box {
+    width: 100%;
+    justify-content: flex-end;
+    padding: 32px 0;
+  }
+}
+@media (min-width: 1024px) {
+  .banner-box {
+    width: 50%;
+    padding: 0 8px;
+    justify-content: center;
+  }
+}
+@media (min-width: 440px) and (max-width: 992px) {
+  .banner-box {
+    width: 100%;
+    padding: 0 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 440px) {
+  .banner-box:nth-child(2) {
+    display: none;
+  }
+}
+@media (min-width: 440px) and (max-width: 992px) {
+  .banner-box:nth-child(2) {
+    display: none;
+  }
+}
+
+@media (max-width: 440px) {
+  .banner-box:nth-child(3) {
+    display: none;
+  }
+}
+@media (min-width: 440px) and (max-width: 992px) {
+  .banner-box:nth-child(3) {
+    display: none;
+  }
+}
+
+@media (max-width: 440px) {
+  h1.card-title {
+    font-size: 22px;
+    line-height: 32px;
+    text-align: center;
+    margin-top: 0px;
+    letter-spacing: 0.04em;
+  }
+}
+@media (min-width: 440px) and (max-width: 992px) {
+  h1.card-title {
+    font-size: 25px;
+    line-height: 30px;
+    text-align: left;
+  }
+}
+@media (min-width: 1024px) {
+  h1.card-title {
+    font-size: 38px;
+    line-height: 46px;
+    text-align: left;
+  }
+}
+
+@media (max-width: 440px) {
+  p.card-text {
+    display: none;
+  }
+}
+@media (min-width: 440px) and (max-width: 992px) {
+  p.card-text {
+    display: none;
+  }
+}
+
+@media (max-width: 440px) {
+  .title-discount > p.card-title {
+    text-align: center;
+  }
+}
+
+@media (max-width: 440px) {
+  .margin-mobile {
+    margin: 10px;
+  }
+}
+@media (min-width: 440px) and (max-width: 992px) {
+  .margin-mobile {
+    margin: 10px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .padding-desktop {
+    padding: 24px 0px;
+  }
+}
+
+@media (max-width: 440px) {
+  .category {
+    padding: 0px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .item-padding {
+    padding: 20px;
+  }
+}
+
+@media (min-width: 1024px) {
+  h3.card-title {
+    font-size: 30px;
+    line-height: 37px;
+  }
+}
+@media (max-width: 440px) {
+  h3.card-title {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .item-discount {
+    top: 5%;
+    left: 5%;
+  }
+}
+@media (max-width: 440px) {
+  .item-discount {
+    top: 5%;
+    left: 10%;
+  }
+}
+
+@media (max-width: 440px) {
+  .body4-banner-desktop {
+    display: none;
+  }
+}
+@media (min-width: 440px) and (max-width: 992px) {
+  .body4-banner-desktop {
+    display: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  .body4-banner-mobile {
+    display: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  h2.card-title {
+    font-size: 38px;
+    line-height: 46px;
+    text-align: left;
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 440px) {
+  h2.card-title {
+    text-align: center;
+    font-size: 25px;
+    line-height: 30px;
+    margin-bottom: 8px;
+  }
+}
+@media (min-width: 440px) and (max-width: 992px) {
+  h2.card-title {
+    font-size: 30px;
+    line-height: 35px;
+    text-align: left;
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 440px) {
+  .row > .banner-box {
+    align-items: center;
+  }
+}
+
+@media (max-width: 440px) {
+  .mobile-row {
+    display: none;
+  }
+}
+@media (min-width: 440px) and (max-width: 992px) {
+  .mobile-row {
+    display: none;
+  }
+}
+
+.mobile-container {
+  align-items: center;
+}
+
+@media (max-width: 440px) {
+  .our-product-img {
+    object-fit: cover;
+    background-position: center;
+    border-radius: 50%;
+  }
+}
+
+@media (max-width: 440px) {
+  .our-product-left {
+    height: 300px;
+    width: 300px;
+  }
+}
+@media (min-width: 1024px) {
+  .our-product-left {
+    height: 500px;
+    width: 500px;
+  }
+}
+
+@media (max-width: 440px) {
+  .our-product-img {
+    height: 300px;
+    width: 300px;
+  }
+}
+@media (min-width: 1024px) {
+  .our-product-img {
+    height: 500px;
+    width: 500px;
+  }
+}
+
+@media (max-width: 440px) {
+  .our-product-box, .col-box-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (min-width: 440px) and (max-width: 992px) {
+  .our-product-box, .col-box-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 440px) {
+  .story-text {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .margin-top {
+    margin-top: 50px;
+  }
+}
+@media (min-width: 440px) and (max-width: 992px) {
+  .margin-top {
+    margin-top: 30px;
+  }
+}
+@media (max-width: 440px) {
+  .margin-top {
+    margin-top: 15px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .body6-row-2 > span.card-title {
+    margin-left: 15px;
+  }
+}
+@media (max-width: 440px) {
+  .body6-row-2 > span.card-title {
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 440px) {
+  .body6-row-2 {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+  }
+}
+
+@media (max-width: 440px) {
+  .body-newsletter > span.card-text,
+.col-sm-12 > span.card-text {
+    text-align: center;
+    width: 80%;
+  }
+}
+
+@media (max-width: 440px) {
+  .btn-responsive {
+    margin-top: 20px;
+  }
+}
+@media (min-width: 440px) and (max-width: 992px) {
+  .btn-responsive {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 440px) {
+  .banner-box-js {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (min-width: 1024px) {
+  .banner-box-js {
+    padding: 50px 0px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .mobile-dot {
+    display: none;
+  }
+}
+
+.header-responsive {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/*# sourceMappingURL=header.css.map */
