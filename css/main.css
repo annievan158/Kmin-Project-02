@@ -2557,28 +2557,31 @@ div {
   margin-bottom: 20px;
 
 }
-@media (max-width: 1024px){
-  .signup{
-    
-    padding: 60px 50px;
-  }
-}
 @media (max-width: 440px){
   .signup{
-
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto; 
     padding: 30px;
   }
 }
-.signup{
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  margin: auto; 
-  padding: 100px 50px;
+@media(min-width: 1024px){
+  .signup{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto; 
+    padding: 100px 50px;
+  }
 }
+
 @media (max-width: 1024px){
   .circle-box{
       border-radius: 50%;
