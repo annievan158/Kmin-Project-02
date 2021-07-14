@@ -395,10 +395,13 @@
                         </p>
                         <form>
                             <div class="mb-3 padding-top" >
-                              <input type="text" class="form-control" placeholder="Email" aria-label="Email" aria-describedby="basic-addon1">
+                              <input type="text" class="form-control email" placeholder="Email" aria-label="Email" aria-describedby="basic-addon1">
+                              <p id="err-login-email"></p>
                             </div>
                             <div class="mb-3 padding-top">
-                                <input type="text" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="basic-addon1">                        </div>
+                                <input type="text" class="form-control password" placeholder="Password" aria-label="Password" aria-describedby="basic-addon1">                       
+                                <p id="err-login-psw"></p>
+                            </div>
                             <div class=" form-check-center padding-top">
                                 <div class="form-check ">
                                     <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
@@ -412,7 +415,7 @@
                                   </a>
                             </div>
                             <div class="form-btn padding-top">
-                                <button type="button" class="btn btn-outline-dark" style="width: 250px;">SIGN IN</button>
+                                <button type="button" class="btn btn-outline-dark btnLogin" style="width: 250px;">SIGN IN</button>
                             </div>
                         </form>
                     </div>
@@ -593,5 +596,29 @@
         </div>
     </div> 
     </div>
+    <script>
+
+        let email = document.querySelector('.email');
+        email.onblur = function(){
+            if(email.value == ""){
+            document.getElementById("err-login-email").innerHTML = "Yêu cầu phải điền trường thông tin này ";
+            }
+            else{ 
+                document.getElementById("err-login-mail").innerHTML =" ";
+            }
+        }
+        let password = document.querySelector('.password');
+        password.onblur = function(){
+            if(password.value == ""){
+            document.getElementById("err-login-psw").innerHTML = "Yêu cầu phải điền trường thông tin này ";
+        }
+            else{ 
+                document.getElementById("err-login-psw").innerHTML ="  ";
+            }
+        }
+
+        // Success Login 
+            
+    </script>
 </body>
 </html>
