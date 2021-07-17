@@ -1,58 +1,4 @@
 
-$(document).ready(function(){
-  $('#tabs-nav li:first-child').addClass('active');
-  $('.content-tab').hide();
-  $('.content-tab:first').show();
-
-  // Click function
-  $('#tabs-nav li').mouseenter(function(){
-  $('#tabs-nav li').removeClass('active');
-  //  $(this).addClass('active');
-  $('.content-tab').hide();
-
-  let activeTab = $(this).find('a').attr('href');
-  $(activeTab).fadeIn();
-  return true;
-  });
-
-  // hover tab
-// let dropdown = $('.our-product-info');
-// let i ; 
-//   for (i = 0; i < dropdown.length; i++){
-//     dropdown[i].click(function(){
-//       this.toggleClass('.active');
-//       let content = this.nextElementSibling;
-//       if(content.show()){
-//         content.hide();
-//       }
-//       else{
-//         content.show();
-//       }
-//     })
-//   }
-
-  // Collapsed Sidepanel
-// function openNav() {
-//   $("#mySidepanel").show();
-//   $("#mySidepanel").css("width", "50%");
-// }
-
-// function closeNav() {
-//   $("#mySidepanel").hide();
-//   $("#mySidepanel").css("width", "0");
-// }
-
-// function openNavLeft() {
-//   $("mySidepanelLeft").css("width", "250px");
-// }
-
-// function closeNavLeft() {
-//   $("mySidepanelLeft").css("width", "0");
-// }
-
-});
-
-
 
 let dropdown = document.getElementsByClassName("our-product-info");
 let i;
@@ -124,11 +70,5 @@ function openNavLeft() {
 function closeNavLeft() {
   document.getElementById("mySidepanelLeft").style.width = "0";
 }
-
-
-
-
-
-
 
 
