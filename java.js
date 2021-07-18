@@ -1,5 +1,4 @@
 
-
 let dropdown = document.getElementsByClassName("our-product-info");
 let i;
 
@@ -34,8 +33,6 @@ function showSlides(n) {
     let banner = document.getElementsByClassName("body4-banner-desktop");
     let slideshow = document.getElementsByClassName("slideshow");
     let box = document.getElementsByClassName('banner-box-js');
-
-
     if (n > banner.length) {slideIndex = 1}    
     if (n < 1) {slideIndex = slideshow.length}
     for (i = 0; i < banner.length; i++) {
@@ -51,8 +48,6 @@ function showSlides(n) {
     box[slideIndex-1].style.display = "block";  
     slideshow[slideIndex-1].className += " active";
 }
-
-
 // Collapsed Sidepanel
 function openNav() {
   let width = $(window).width();
@@ -78,5 +73,4 @@ function openNavLeft() {
 function closeNavLeft() {
   document.getElementById("mySidepanelLeft").style.width = "0";
 }
-
 

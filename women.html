@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WOMEN</title>
+    <title>PRODUCT</title>
     <link href="./css/main.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,13 +29,14 @@
                     <input type="text" class="form-control" placeholder="Tìm kiếm">
                     <a href="javascript:void(0)" class="closebtn" onclick="closeNavLeft()">×</a>
                     <a href="#">ĐỒNG HỒ NAM </a>
-                    <a href="#">ĐỒNG HỒ NỮ</a>
-                    <a href="#">DÂY ĐỒNG HỒ</a>
-                    <a href="#">PHỤ KIỆN</a>
+                    <a href="./women.html">ĐỒNG HỒ NỮ</a>
+                    <a href="./login.html">ĐĂNG NHẬP</a>
+                    <a href="./signup.html">ĐĂNG KÍ</a>
+
                   </div>
-                <div class="nav-left header-display" id="navbarResponsive">
+                <div class="nav-left header-display nav-relative" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
-                        <li class="nav-item"><a class="nav-link me-lg-3" href="#features">ĐỒNG HỒ</a>
+                        <li class="nav-item"><a class="nav-link me-lg-3" href="./women.html">ĐỒNG HỒ</a>
                             <div class="header-hover" style="width: 100%;">
                                 <div class="row" style="padding: 50px;">
                                     <div class="col-2">
@@ -103,7 +104,7 @@
                                             </div>
                                         </div>
                                             <!-- Đồng hồ nữ -->
-                                        <div class="row content-tab" id="#tab2">
+                                        <div class="row content-tab" id="#tab2" style="display: none">
                                             <div class="col-4" >
                                                 <a href="#" class="list-group-item list-group-item-action" style="border: none">MUA THEO BỘ SƯU TẬP</a>
                                                 <div class="col-box">
@@ -156,7 +157,7 @@
                                             </div>
                                         </div>
                                         <!-- Sale -->
-                                        <div class="row content-tab" id="#tab3">
+                                        <div class="row content-tab" id="#tab3" style="display: none">
                                             <div class="col-5">
                                                 <img src="./img/Straps.jpg" alt="" class="col-3-img">
                                             </div>
@@ -172,7 +173,7 @@
                                 </div>
                             </div>
                         </li>
-                        <li class="nav-item"><a class="nav-link me-lg-3" href="#download">PHỤ KIỆN</a>
+                        <li class="nav-item"><a class="nav-link me-lg-3" href="">PHỤ KIỆN</a>
                             <div class="header-hover" style="width: 100%;">
                                 <div class="row " style="padding: 50px;">
                                     <div class="col-2">
@@ -275,7 +276,7 @@
                                         </div>
                                         <div class="brand-text">
                                             <img src="./img/whynot-cBD.png" alt="" class="brand-img-text">
-                                            <button type="button" class="btn-edit btn ">KHÁM PHÁ BLOG</button>
+                                            <button type="button" class="btn " style="background-color: white; color: black;">KHÁM PHÁ BLOG</button>
                                         </div>
 
                                     </div>
@@ -288,7 +289,7 @@
                                         </div>
                                         <div class="brand-text">
                                             <h3 class="card-title" style="color: white;padding-bottom: 20px;font-weight: bold;">ABOUT US</h3>
-                                            <button type="button" class="btn-edit btn ">VỀ CHÚNG TÔI</button>
+                                            <button type="button" class="btn " style="background-color: white; color: black;"> VỀ CHÚNG TÔI</button>
                                         </div>
 
                                     </div>
@@ -301,30 +302,29 @@
                                         </div>
                                         <div class="brand-text">
                                             <h3 class="card-title" style="color: white;padding-bottom: 20px; font-weight: bolder;">LONG AND SHORT</h3>
-                                            <button type="button" class="btn-edit btn ">TÌM HIỂU THÊM </button>
+                                            <button type="button" class="btn " style="background-color: white; color: black;">TÌM HIỂU THÊM </button>
                                         </div>
 
                                     </div>
                                 </div>
                             </div>
                         </li>
-
                     </ul>
                 </div>
-                <a class="navbar-brand fw-bold " href="#page-top">
+                <a class="navbar-brand fw-bold " href="./index.html">
                     <img src="./img/logo-mWb.svg" class="img-fluid" alt="...">
                 </a>
                 <div class="nav-right header-display" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
                         <li class="nav-item"><a class="nav-link me-lg-3" href="#features">TÀI KHOẢN</a>
-                            <div class="header-hover">
-                                <a href="#" class="dropdown-content">ĐĂNG NHẬP</a>
-                                <a href="#" class="dropdown-content">ĐĂNG KÍ </a>
+                            <div class="dropdown-content">
+                                <a href="./login.html" class="">ĐĂNG NHẬP</a>
+                                <a href="./signup.html" class="">ĐĂNG KÍ </a>
                             </div>
                         </li>
-                        <li class="nav-item"><a class="nav-link me-lg-3" onclick="openNav()" href="#download">
-                            GIỎ HÀNG
-                        </a>
+                        <li class="nav-item">
+                            <a class="nav-link me-lg-3" onclick="openNav()" href="#download">
+                            GIỎ HÀNG </a>
                             
                         </li>
                         <li class="nav-item"><a class="nav-link me-lg-3" href="#features">
@@ -342,34 +342,64 @@
 
                 <div id="mySidepanel" class="sidepanel">
                                 <div class="side-header">
-                                    <h3 class="card-title">GIỎ HÀNG CỦA BẠN</h3>                                 
-                                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
-                                        <h3 class="card-title">x</h3>      
-                                    </a>
-                                <br>
+                                    <div class="side-left">
+                                        <h3 class="card-title">GIỎ HÀNG CỦA BẠN</h3>
+                                    </div>
+                                    <div class="side-right">
+                                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+                                            <h3 class="card-title">x</h3>      
+                                        </a>
+                                    </div>
                                 </div>
-                                <div class="side-body">
-                                    <span class="card-title">
-                                        Hiện tại chưa có sản phẩm nào trong giỏ hàng của bạn
-                                    </span>
-                                   <a href="#">
-                                    <button type="button" class="btn btn-dark">TIẾP TỤC MUA SẮM</button>
-                                   </a>
-                                </div>
+                                    <!-- <div class="side-body-none">
+                                        <span class="card-title">
+                                            Hiện tại chưa có sản phẩm nào trong giỏ hàng của bạn
+                                        </span>
+                                        
+                                       <a href="#">
+                                        <button type="button" class="btn btn-dark">TIẾP TỤC MUA SẮM</button>
+                                       </a>
+                                    </div> -->
+                                    <div class="side-body">
+                                        <div class="cart-row">
+                                            <span class="cart-item cart-header cart-column">Sản Phẩm</span>
+                                            <span class="cart-price cart-header cart-column">Giá</span>
+                                            <span class="cart-quantity cart-header cart-column">Số Lượng</span>
+                                        </div>
+    
+                                        <div class="cart-items">
+    
+                                        </div>
+                                            
+                                        
+                                    </div>
+                                
                                 <div class="side-service">
-                                    <div class="side-service-group">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-truck" viewBox="0 0 16 16" style="width: 50px; height: 50px;">
-                                            <path d="M0 3.5A1.5 1.5 0 0 1 1.5 2h9A1.5 1.5 0 0 1 12 3.5V5h1.02a1.5 1.5 0 0 1 1.17.563l1.481 1.85a1.5 1.5 0 0 1 .329.938V10.5a1.5 1.5 0 0 1-1.5 1.5H14a2 2 0 1 1-4 0H5a2 2 0 1 1-3.998-.085A1.5 1.5 0 0 1 0 10.5v-7zm1.294 7.456A1.999 1.999 0 0 1 4.732 11h5.536a2.01 2.01 0 0 1 .732-.732V3.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .294.456zM12 10a2 2 0 0 1 1.732 1h.768a.5.5 0 0 0 .5-.5V8.35a.5.5 0 0 0-.11-.312l-1.48-1.85A.5.5 0 0 0 13.02 6H12v4zm-9 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm9 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+                                    <div class="cart-footer">
+                                        <div class="side-left">
+                                            <span class="cart-item cart-header ">Thành tiền</span>
+                                        </div>
+                                        <div class="side-right">
+                                            <span class="cart-item cart-header  cart-total-price">0</span>
+                                            <!-- <h5 class="card-title cart-total-price" style="font-weight: bold; color: black;"> 2.229.000 đ</h5> -->
+                                        </div>
+                                    </div>
+                                    <div class="side-service-box">
+                                        <div class="side-service-group">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-truck" viewBox="0 0 16 16" style="width: 50px; height: 50px;">
+                                                <path d="M0 3.5A1.5 1.5 0 0 1 1.5 2h9A1.5 1.5 0 0 1 12 3.5V5h1.02a1.5 1.5 0 0 1 1.17.563l1.481 1.85a1.5 1.5 0 0 1 .329.938V10.5a1.5 1.5 0 0 1-1.5 1.5H14a2 2 0 1 1-4 0H5a2 2 0 1 1-3.998-.085A1.5 1.5 0 0 1 0 10.5v-7zm1.294 7.456A1.999 1.999 0 0 1 4.732 11h5.536a2.01 2.01 0 0 1 .732-.732V3.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .294.456zM12 10a2 2 0 0 1 1.732 1h.768a.5.5 0 0 0 .5-.5V8.35a.5.5 0 0 0-.11-.312l-1.48-1.85A.5.5 0 0 0 13.02 6H12v4zm-9 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm9 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+                                                </svg>
+                                                <span class="card-title" style=" color: black; margin-left: 30px;">FREESHIP VỚI ĐƠN HÀNG TỪ 700.000 VND</span>
+                                        </div>
+                                        <div class="side-service-group">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-award" viewBox="0 0 16 16" style="width: 50px; height: 50px; ">
+                                                <path d="M9.669.864 8 0 6.331.864l-1.858.282-.842 1.68-1.337 1.32L2.6 6l-.306 1.854 1.337 1.32.842 1.68 1.858.282L8 12l1.669-.864 1.858-.282.842-1.68 1.337-1.32L13.4 6l.306-1.854-1.337-1.32-.842-1.68L9.669.864zm1.196 1.193.684 1.365 1.086 1.072L12.387 6l.248 1.506-1.086 1.072-.684 1.365-1.51.229L8 10.874l-1.355-.702-1.51-.229-.684-1.365-1.086-1.072L3.614 6l-.25-1.506 1.087-1.072.684-1.365 1.51-.229L8 1.126l1.356.702 1.509.229z"/>
+                                                <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1 4 11.794z"/>
                                             </svg>
-                                            <span class="card-title" style=" color: black; margin-left: 30px;">FREESHIP VỚI ĐƠN HÀNG TỪ 700.000 VND</span>
+                                            <span class="card-title" style=" color: black; margin-left: 30px;">CAM KẾT 100% HÀNG CHÍNH HÃNG</span>
+                                        </div>
                                     </div>
-                                    <div class="side-service-group">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-award" viewBox="0 0 16 16" style="width: 50px; height: 50px; ">
-                                            <path d="M9.669.864 8 0 6.331.864l-1.858.282-.842 1.68-1.337 1.32L2.6 6l-.306 1.854 1.337 1.32.842 1.68 1.858.282L8 12l1.669-.864 1.858-.282.842-1.68 1.337-1.32L13.4 6l.306-1.854-1.337-1.32-.842-1.68L9.669.864zm1.196 1.193.684 1.365 1.086 1.072L12.387 6l.248 1.506-1.086 1.072-.684 1.365-1.51.229L8 10.874l-1.355-.702-1.51-.229-.684-1.365-1.086-1.072L3.614 6l-.25-1.506 1.087-1.072.684-1.365 1.51-.229L8 1.126l1.356.702 1.509.229z"/>
-                                            <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1 4 11.794z"/>
-                                        </svg>
-                                        <span class="card-title" style=" color: black; margin-left: 30px;">CAM KẾT 100% HÀNG CHÍNH HÃNG</span>
-                                    </div>
+                                    
                                 </div>
 
                 </div>
@@ -383,113 +413,84 @@
     <div class="body">
         <div class="banner">
             <div class="body-banner-desktop">
-                <img src="./img/banner_kashmir_desktop-8bo.jpg" alt="" class="body-banner-img">
+                <img src="./img/banner.jpg" alt="" class="body-banner-img">
             </div>
             <div class="body-banner-mobile">
-                <img src="./img/banner_kashmir_mobile-3WL.jpg" alt="" class="body-banner-img">
-            </div>
-            
-            <div class="banner-container">
-                <div class="banner-box banner-box-left">
-                    <h1 class="card-title">KASHMIR COLLECTION </h1>
-                    <h1 class="card-title">NIỀM TỰ HÀO ĐẦU TIÊN</h1>
-                    <p class="card-text">
-                        Là dòng đồng hồ đầu tiên của Curnon, Kashmir
-                        định hình một triết lí thiết kế tối giản, hiện đại
-                        và đại diện cho sự tự tin.
-                    </p>
-                    <button type="button" class="btn btn-outline-light">KHÁM PHÁ NGAY</button>
-                </div>
+                <img src="./img/banner.jpg" alt=""  style="height: 250px; width: 100%; object-fit: cover;background-position: center center;">
             </div>
 
         </div>
 
-        <div class="row margin-top">
-            <div class="container " style="display:flex" >
-                <div class="col-sm-6 col-md-5 col-lg-5">
-                    <h5 class="card-title" style="color: black;"> 
-                        SẮP XẾP PHÙ HỢP NHẤT 
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-compact-down" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67z"/>
-                        </svg>
-                        <div id="myDropdown" class="dropdown-content">
-                            <a href="#">Phù hợp nhất</a>
-                            <a href="#">Giá tăng dần</a>
-                            <a href="#">Giá giảm dần</a>
-                        </div>
-                    </h5>
-                </div>
-                <div class="col-sm-6 col-md-2 col-lg-2 col-responsive" >
-                    <span style="margin-right: 10px">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-filter-square" viewBox="0 0 16 16">
-                            <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
-                            <path d="M6 11.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5zm-2-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm-2-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"/>
-                        </svg>
-                    </span>
-                    <h5 class="card-title" style="color: black;"> 
-                        FILTER
-                    </h5>
-                </div>
-            </div>
-        </div>
+        <div class="margin-top row-responsive " style="background-color: #f5f5f5">
+            <div class=" " style="display:flex; flex-direction: column;" >
+                    <h2 class="card-title" style="color: black;  text-align: center;">ĐỒNG HỒ NỮ</h2>
 
-        <div class="row margin-top " style="background-color: #f5f5f5">
-            <div class="container " style="display:flex" >
-                <div class="col-sm-12 col-md-5 col-lg-5" >
-                        <h5 class="card-title" style="color: black; align-items: center;"> 
-                            37 of 37 products
-                        </h5>                    
-                </div>
+                    <h5 class="card-title" style="color: black; text-align: center;"> 
+                        Trang sức nói lên cá tính của người phụ nữ hiện đại
+                    </h5>        
                    
             </div>
+
         </div>
 
+        
         <div class="best-seller margin-top">
             <div class="container best-seller-container">
-                <div class="gallery " style="background-color: white">
-                    <div class="container">
+                <div class="container">
                         <div class="row">
                             <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3 item-padding">
                                 <div class="container gallery-container">
-                                    <div class="gallery-img">
-                                        <img src="./img/lexie.1.png" alt="" class="gallery-img-banner">
+                                    <div class="gallery-img"> 
+                                        <a href="./product.html" class="">
+                                            <img src="./img/lexie.1.png" alt="" class="gallery-img-banner">
+                                        </a>
                                     </div>
                                     <div class="item-favorite">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
                                             <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
                                           </svg>
                                     </div>
-                                    <span class="item-discount"> 20% </span>
-
-                                    <span class="card-title">Santorini - 24mm</span>
-                                    <span  class="card-title">LEXIE</span>
+                                    <span class="card-title card-title-name">
+                                        <span class="card-title">
+                                            Santorini - 24mm
+                                        </span>
+                                        <span class="card-title">
+                                            LEXIE
+                                        </span>
+                                    </span>
                                     <div class="discount-box">
-                                        <h5 class="card-title" style="color:rgba(0, 0, 0, 0.6) ;">
+                                        <h5 class="card-title cart-title-price new-price" style="color:rgba(0, 0, 0, 0.6) ;">
                                             2.079.000 ₫
                                         </h5>
                                         <div class="title-discount">
-                                            <p class="card-title">&nbsp;</p>
+                                            <p class="card-title old-price">&nbsp;</p>
                                         </div>
                                     </div>
-                                    <a href="" class="gallery-btn">
-                                        <button type="button" class="btn btn-dark">XEM SẢN PHẨM</button>
-                                    </a>
+                                    <button type="button" class="btn btn-dark button-add">THÊM VÀO GIỎ</button>
                                 </div>
                             </div>
                             <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3 item-padding" >
                                 <div class="container gallery-container">
                                     <div class="gallery-img">
-                                        <img src="./img/serene.png" alt="" class="gallery-img-banner">
+                                        <a href="./product.html" class="">
+                                            <img src="./img/serene.png" alt="" class="gallery-img-banner">
+                                        </a>
                                     </div>
                                     <div class="item-favorite">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
                                             <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
                                           </svg>
                                     </div>
-                                    <span class="card-title">Melissani - 32mm</span>
-                                    <span  class="card-title">AUTUMN</span>
+                                    <span class="card-title card-title-name">
+                                        <span class="card-title">
+                                            Melissani - 32mm
+                                        </span>
+                                        <span class="card-title">
+                                            AUTUMN
+                                        </span>
+                                    </span>
                                     <div class="discount-box">
-                                        <h5 class="card-title" style="color:rgba(0, 0, 0, 0.6) ;">
+                                        <h5 class="card-title cart-title-price" style="color:rgba(0, 0, 0, 0.6) ;">
                                             1.954.000 ₫
                                         </h5>
                                         <div class="title-discount">
@@ -497,16 +498,16 @@
                                         </div>
                                     </div>
                                     
-                                    <a href="" class="gallery-btn">
-                                        <button type="button" class="btn btn-dark">XEM SẢN PHẨM</button>
-                                    </a>
+                                    <button type="button" class="btn btn-dark button-add">THÊM VÀO GIỎ</button>
                                     
                                 </div>
                             </div>
                             <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3 item-padding" >
                                 <div class="container gallery-container">
                                     <div class="gallery-img">
-                                        <img src="./imG/autumn_1.png" alt="" class="gallery-img-banner">
+                                        <a href="./product.html" class="">
+                                            <img src="./imG/autumn_1.png" alt="" class="gallery-img-banner">
+                                        </a>
                                     </div>
                                     <div class="item-favorite">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
@@ -515,26 +516,33 @@
                                           
                                     </div>
                                     <span class="item-discount"> 20% </span>
-                                    <span class="card-title">HALMITON</span>
-                                    <span  class="card-title">AUTUNM</span>
+                                    <span class="card-title card-title-name">
+                                        <span class="card-title">
+                                            HALMITON - 32mm
+                                        </span>
+                                        <span class="card-title">
+                                            AUTUMN
+                                        </span>
+                                    </span>
+                                    
                                     <div class="discount-box">
-                                        <h5 class="card-title" style="color:rgba(0, 0, 0, 0.6) ;">
+                                        <h5 class="card-title cart-title-price new-price" style="color:rgba(0, 0, 0, 0.6) ;">
                                             1.954.000 ₫
                                         </h5>
                                         <div class="title-discount">
-                                            <p class="card-title">2.299.000 đ</p>
+                                            <p class="card-title old-price">2.299.000 đ</p>
                                         </div>
                                     </div>
                                     
-                                    <a href="" class="gallery-btn">
-                                        <button type="button" class="btn btn-dark">XEM SẢN PHẨM</button>
-                                    </a>
+                                    <button type="button" class="btn btn-dark button-add">THÊM VÀO GIỎ</button>
                                 </div>
                             </div>
                             <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3 item-padding" >
                                 <div class="container gallery-container">
                                     <div class="gallery-img">
-                                        <img src="./imG/cora.1.png" alt="" class="gallery-img-banner">
+                                        <a href="./product.html" class="">
+                                            <img src="./imG/cora.1.png" alt="" class="gallery-img-banner">
+                                        </a>
                                     </div>
                                     <div class="item-favorite">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
@@ -543,108 +551,203 @@
                                     </div>
                                     <span class="item-discount"> 20% </span>
 
-                                    <span class="card-title">HALMITON</span>
-                                    <span  class="card-title">AUTUNM</span>
+                                    <span class="card-title card-title-name">
+                                        <span class="card-title">
+                                            HALMITON - 32mm
+                                        </span>
+                                        <span class="card-title">
+                                            LEXIE
+                                        </span>
+                                    </span>
                                     <div class="discount-box">
-                                        <h5 class="card-title" style="color:rgba(0, 0, 0, 0.6) ;">
+                                        <h5 class="card-title cart-title-price new-price" style="color:rgba(0, 0, 0, 0.6) ;">
                                             1.954.000 ₫
                                         </h5>
                                         <div class="title-discount">
-                                            <p class="card-title">2.299.000 đ </p>
+                                            <p class="card-title old-price">2.299.000 đ </p>
                                         </div>
                                     </div>
-                                    
-                                    <a href="" class="gallery-btn">
-                                        <button type="button" class="btn btn-dark">XEM SẢN PHẨM</button>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3 item-padding" >
-                                <div class="container gallery-container">
-                                    <div class="gallery-img">
-                                        <img src="./imG/cora.1.png" alt="" class="gallery-img-banner">
-                                    </div>
-                                    <div class="item-favorite">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
-                                            <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
-                                          </svg>
-                                    </div>
-                                    <span class="item-discount"> 20% </span>
-
-                                    <span class="card-title">HALMITON</span>
-                                    <span  class="card-title">AUTUNM</span>
-                                    <div class="discount-box">
-                                        <h5 class="card-title" style="color:rgba(0, 0, 0, 0.6) ;">
-                                            1.954.000 ₫
-                                        </h5>
-                                        <div class="title-discount">
-                                            <p class="card-title">2.299.000 đ </p>
-                                        </div>
-                                    </div>
-                                    
-                                    <a href="" class="gallery-btn">
-                                        <button type="button" class="btn btn-dark">XEM SẢN PHẨM</button>
-                                    </a>
+                                    <button type="button" class="btn btn-dark button-add">THÊM VÀO GIỎ</button>
                                 </div>
                             </div>
                             <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3 item-padding">
                                 <div class="container gallery-container">
                                     <div class="gallery-img">
-                                        <img src="./img/lexie.1.png" alt="" class="gallery-img-banner">
+                                        <a href="./product.html" class="">  
+                                            <img src="./img/vd.dapper.png" alt="" class="gallery-img-banner">
+                                        </a>
+                                    </div>
+                                    <div class="item-favorite">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                                            <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                                        </svg>
+                                    </div>
+                                    <span class="card-title card-title-name">
+                                        <span class="card-title">
+                                            KASHMIR - 40MM
+                                        </span>
+                                        <span class="card-title">
+                                            KASHMIR - 40MM
+                                        </span>
+                                    </span>
+                                    <h5 class="card-title cart-title-price" style="color:rgba(0, 0, 0, 0.6) ;">
+                                        2.299.000 ₫
+                                    </h5>
+                                    <button type="button" class="btn btn-dark button-add">THÊM VÀO GIỎ</button>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3 item-padding" >
+                                <div class="container gallery-container">
+                                    <div class="gallery-img">
+                                        <a href="./product.html" class="">
+                                            <img src="./img/d.robust.png" alt="" class="gallery-img-banner">
+                                        </a>
                                     </div>
                                     <div class="item-favorite">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
                                             <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
                                           </svg>
                                     </div>
-                                    <span class="item-discount"> 20% </span>
+                                    <span class="card-title card-title-name">
+                                        <span class="card-title">
+                                            KASHMIR - 40MM
+                                        </span>
+                                        <span class="card-title">
+                                            ROBUST
+                                        </span>
+                                    </span>
+                                    <div class="discount-box">
+                                        <h5 class="card-title cart-title-price" style="color:rgba(0, 0, 0, 0.6) ;">
+                                            2.299.000 ₫
+                                        </h5>
+                                    </div>
+                                    
+                                    <button type="button" class="btn btn-dark button-add">THÊM VÀO GIỎ</button>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3 item-padding" >
+                                <div class="container gallery-container">
+                                    <div class="gallery-img">
+                                        <a href="./product.html" class="">
+                                            <img src="./imG/d.rebel.png" alt="" class="gallery-img-banner">
+                                        </a>
+                                    </div>
+                                    <div class="item-favorite">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                                            <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                                          </svg>
+                                    </div>
+                                    <span class="card-title card-title-name">
+                                        <span class="card-title">
+                                            KASHMIR - 40MM
+                                        </span>
+                                        <span class="card-title">
+                                            REBEL
+                                        </span>
+                                    </span>
+                                    <h5 class="card-title cart-title-price" style="color:rgba(0, 0, 0, 0.6) ;">
+                                        2.199.000 ₫
+                                    </h5>
+                                    <button type="button" class="btn btn-dark button-add">THÊM VÀO GIỎ</button>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3 item-padding" >
+                                <div class="container gallery-container">
+                                    <div class="gallery-img">
+                                        <a href="./product.html" class="">
+                                            <img src="./img/bx.grand.png" alt="" class="gallery-img-banner">
+                                        </a>
+                                    </div>
+                                    <div class="item-favorite">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                                            <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                                          </svg>
+                                    </div>
+                                    <span class="card-title card-title-name">
+                                        <span class="card-title">
+                                            KASHMIR - 40MM
+                                        </span>
+                                        <span class="card-title">
+                                            GRAND
+                                        </span>
+                                    </span>
+                                    <h5 class="card-title cart-title-price" style="color:rgba(0, 0, 0, 0.6) ;">
+                                        2.199.000 ₫
+                                    </h5>
+                                    <button type="button" class="btn btn-dark button-add">THÊM VÀO GIỎ</button>
+                                </div>
+                            </div>
 
-                                    <span class="card-title">Santorini - 24mm</span>
-                                    <span  class="card-title">LEXIE</span>
-                                    <div class="discount-box">
-                                        <h5 class="card-title" style="color:rgba(0, 0, 0, 0.6) ;">
-                                            2.079.000 ₫
-                                        </h5>
-                                        <div class="title-discount">
-                                            <p class="card-title">&nbsp;</p>
-                                        </div>
-                                    </div>
-                                    <a href="" class="gallery-btn">
-                                        <button type="button" class="btn btn-dark">XEM SẢN PHẨM</button>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3 item-padding" >
+                            <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3 item-padding">
                                 <div class="container gallery-container">
-                                    <div class="gallery-img">
-                                        <img src="./img/serene.png" alt="" class="gallery-img-banner">
+                                    <div class="gallery-img"> 
+                                        <a href="./product.html" class="">
+                                            <img src="./img/florenge.png" alt="" class="gallery-img-banner">
+                                        </a>
                                     </div>
                                     <div class="item-favorite">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
                                             <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
                                           </svg>
                                     </div>
-                                    <span class="card-title">Melissani - 32mm</span>
-                                    <span  class="card-title">AUTUMN</span>
+                                    <span class="card-title card-title-name">
+                                        <span class="card-title">
+                                            FLORENGE
+                                        </span>
+                                        <span class="card-title">
+                                            FREESIA
+                                        </span>
+                                    </span>
                                     <div class="discount-box">
-                                        <h5 class="card-title" style="color:rgba(0, 0, 0, 0.6) ;">
-                                            1.954.000 ₫
+                                        <h5 class="card-title cart-title-price new-price" style="color:rgba(0, 0, 0, 0.6) ;">
+                                            1.874.000 ₫
                                         </h5>
                                         <div class="title-discount">
-                                            <p class="card-title">&nbsp; </p>
+                                            <p class="card-title old-price">2.499.000</p>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="btn btn-dark button-add">THÊM VÀO GIỎ</button>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3 item-padding" >
+                                <div class="container gallery-container">
+                                    <div class="gallery-img">
+                                        <a href="./product.html" class="">
+                                            <img src="./img/image-12.png" alt="" class="gallery-img-banner">
+                                        </a>
+                                    </div>
+                                    <div class="item-favorite">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                                            <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                                          </svg>
+                                    </div>
+                                    <span class="card-title card-title-name">
+                                        <span class="card-title">
+                                            BEVERLY
+                                        </span>
+                                        <span class="card-title">
+                                            TASTEFUL
+                                        </span>
+                                    </span>
+                                    <div class="discount-box">
+                                        <h5 class="card-title cart-title-price" style="color:rgba(0, 0, 0, 0.6) ;">
+                                            1.494.000 ₫
+                                        </h5>
+                                        <div class="title-discount">
+                                            <p class="card-title">2.599.000</p>
                                         </div>
                                     </div>
                                     
-                                    <a href="" class="gallery-btn">
-                                        <button type="button" class="btn btn-dark">XEM SẢN PHẨM</button>
-                                    </a>
+                                    <button type="button" class="btn btn-dark button-add">THÊM VÀO GIỎ</button>
                                     
                                 </div>
                             </div>
                             <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3 item-padding" >
                                 <div class="container gallery-container">
                                     <div class="gallery-img">
-                                        <img src="./imG/autumn_1.png" alt="" class="gallery-img-banner">
+                                        <a href="./product.html" class="">
+                                            <img src="./img/bevely.jpg" class="gallery-img-banner">
+                                        </a>
                                     </div>
                                     <div class="item-favorite">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
@@ -652,247 +755,273 @@
                                           </svg>
                                           
                                     </div>
-                                    <span class="item-discount"> 20% </span>
-                                    <span class="card-title">HALMITON</span>
-                                    <span  class="card-title">AUTUNM</span>
+                                    <span class="item-discount"> Hot </span>
+                                    <span class="card-title card-title-name">
+                                        <span class="card-title">
+                                            BEVERLY - 32mm
+                                        </span>
+                                        <span class="card-title">
+                                            CLASSY
+                                        </span>
+                                    </span>
+                                    
                                     <div class="discount-box">
-                                        <h5 class="card-title" style="color:rgba(0, 0, 0, 0.6) ;">
-                                            1.954.000 ₫
+                                        <h5 class="card-title cart-title-price new-price" style="color:rgba(0, 0, 0, 0.6) ;">
+                                            1.994.000 ₫
                                         </h5>
                                         <div class="title-discount">
-                                            <p class="card-title">2.299.000 đ</p>
+                                            <p class="card-title old-price">2.599.000 đ</p>
                                         </div>
                                     </div>
                                     
-                                    <a href="" class="gallery-btn">
-                                        <button type="button" class="btn btn-dark">XEM SẢN PHẨM</button>
-                                    </a>
+                                    <button type="button" class="btn btn-dark button-add">THÊM VÀO GIỎ</button>
                                 </div>
                             </div>
                             <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3 item-padding" >
                                 <div class="container gallery-container">
                                     <div class="gallery-img">
-                                        <img src="./imG/cora.1.png" alt="" class="gallery-img-banner">
+                                        <a href="./product.html" class="">
+                                            <img src="./img/13.jpg" alt="" class="gallery-img-banner">
+                                        </a>
                                     </div>
                                     <div class="item-favorite">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
                                             <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
                                           </svg>
                                     </div>
-                                    <span class="item-discount"> 20% </span>
+                                    <span class="item-discount"> Hot </span>
 
-                                    <span class="card-title">HALMITON</span>
-                                    <span  class="card-title">AUTUNM</span>
+                                    <span class="card-title card-title-name">
+                                        <span class="card-title">
+                                            HALMITON - 32mm
+                                        </span>
+                                        <span class="card-title">
+                                            LYDIA
+                                        </span>
+                                    </span>
                                     <div class="discount-box">
-                                        <h5 class="card-title" style="color:rgba(0, 0, 0, 0.6) ;">
+                                        <h5 class="card-title cart-title-price new-price" style="color:rgba(0, 0, 0, 0.6) ;">
                                             1.954.000 ₫
                                         </h5>
                                         <div class="title-discount">
-                                            <p class="card-title">2.299.000 đ </p>
+                                            <p class="card-title old-price">2.299.000 đ </p>
                                         </div>
                                     </div>
-                                    
-                                    <a href="" class="gallery-btn">
-                                        <button type="button" class="btn btn-dark">XEM SẢN PHẨM</button>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3 item-padding" >
-                                <div class="container gallery-container">
-                                    <div class="gallery-img">
-                                        <img src="./imG/cora.1.png" alt="" class="gallery-img-banner">
-                                    </div>
-                                    <div class="item-favorite">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
-                                            <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
-                                          </svg>
-                                    </div>
-                                    <span class="item-discount"> 20% </span>
-
-                                    <span class="card-title">HALMITON</span>
-                                    <span  class="card-title">AUTUNM</span>
-                                    <div class="discount-box">
-                                        <h5 class="card-title" style="color:rgba(0, 0, 0, 0.6) ;">
-                                            1.954.000 ₫
-                                        </h5>
-                                        <div class="title-discount">
-                                            <p class="card-title">2.299.000 đ </p>
-                                        </div>
-                                    </div>
-                                    
-                                    <a href="" class="gallery-btn">
-                                        <button type="button" class="btn btn-dark">XEM SẢN PHẨM</button>
-                                    </a>
+                                    <button type="button" class="btn btn-dark button-add">THÊM VÀO GIỎ</button>
                                 </div>
                             </div>
                             <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3 item-padding">
                                 <div class="container gallery-container">
                                     <div class="gallery-img">
-                                        <img src="./img/lexie.1.png" alt="" class="gallery-img-banner">
+                                        <a href="./product.html" class="">  
+                                            <img src="./img/image-14.jpg" alt="" class="gallery-img-banner">
+                                        </a>
                                     </div>
                                     <div class="item-favorite">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
                                             <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
-                                          </svg>
+                                        </svg>
                                     </div>
-                                    <span class="item-discount"> 20% </span>
-
-                                    <span class="card-title">Santorini - 24mm</span>
-                                    <span  class="card-title">LEXIE</span>
-                                    <div class="discount-box">
-                                        <h5 class="card-title" style="color:rgba(0, 0, 0, 0.6) ;">
-                                            2.079.000 ₫
-                                        </h5>
-                                        <div class="title-discount">
-                                            <p class="card-title">&nbsp;</p>
-                                        </div>
-                                    </div>
-                                    <a href="" class="gallery-btn">
-                                        <button type="button" class="btn btn-dark">XEM SẢN PHẨM</button>
-                                    </a>
+                                    <span class="card-title card-title-name">
+                                        <span class="card-title">
+                                            SANTORINI - 26mm
+                                        </span>
+                                        <span class="card-title">
+                                            GAIA
+                                        </span>
+                                    </span>
+                                    <h5 class="card-title cart-title-price" style="color:rgba(0, 0, 0, 0.6) ;">
+                                        2.299.000 ₫
+                                    </h5>
+                                    <button type="button" class="btn btn-dark button-add">THÊM VÀO GIỎ</button>
                                 </div>
                             </div>
                             <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3 item-padding" >
                                 <div class="container gallery-container">
                                     <div class="gallery-img">
-                                        <img src="./img/serene.png" alt="" class="gallery-img-banner">
+                                        <a href="./product.html" class="">
+                                            <img src="./img/image.jpg" alt="" class="gallery-img-banner">
+                                        </a>
                                     </div>
                                     <div class="item-favorite">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
                                             <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
                                           </svg>
                                     </div>
-                                    <span class="card-title">Melissani - 32mm</span>
-                                    <span  class="card-title">AUTUMN</span>
+                                    <span class="card-title card-title-name">
+                                        <span class="card-title">
+                                            HAMILTON - 26mm
+                                        </span>
+                                        <span class="card-title">
+                                            Laya
+                                        </span>
+                                    </span>
                                     <div class="discount-box">
-                                        <h5 class="card-title" style="color:rgba(0, 0, 0, 0.6) ;">
-                                            1.954.000 ₫
+                                        <h5 class="card-title cart-title-price" style="color:rgba(0, 0, 0, 0.6) ;">
+                                            2.299.000 ₫
                                         </h5>
-                                        <div class="title-discount">
-                                            <p class="card-title">&nbsp; </p>
-                                        </div>
                                     </div>
                                     
-                                    <a href="" class="gallery-btn">
-                                        <button type="button" class="btn btn-dark">XEM SẢN PHẨM</button>
-                                    </a>
-                                    
+                                    <button type="button" class="btn btn-dark button-add">THÊM VÀO GIỎ</button>
                                 </div>
                             </div>
                             <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3 item-padding" >
                                 <div class="container gallery-container">
                                     <div class="gallery-img">
-                                        <img src="./imG/autumn_1.png" alt="" class="gallery-img-banner">
+                                        <a href="./product.html" class="">
+                                            <img src="./img/15.png" alt="" class="gallery-img-banner">
+                                        </a>
                                     </div>
                                     <div class="item-favorite">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
                                             <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
                                           </svg>
-                                          
                                     </div>
-                                    <span class="item-discount"> 20% </span>
-                                    <span class="card-title">HALMITON</span>
-                                    <span  class="card-title">AUTUNM</span>
-                                    <div class="discount-box">
-                                        <h5 class="card-title" style="color:rgba(0, 0, 0, 0.6) ;">
-                                            1.954.000 ₫
-                                        </h5>
-                                        <div class="title-discount">
-                                            <p class="card-title">2.299.000 đ</p>
-                                        </div>
-                                    </div>
-                                    
-                                    <a href="" class="gallery-btn">
-                                        <button type="button" class="btn btn-dark">XEM SẢN PHẨM</button>
-                                    </a>
+                                    <span class="card-title card-title-name">
+                                        <span class="card-title">
+                                            STELLA
+                                        </span>
+                                        <span class="card-title">
+                                            GUNMETAL
+                                        </span>
+                                    </span>
+                                    <h5 class="card-title cart-title-price" style="color:rgba(0, 0, 0, 0.6) ;">
+                                        2.199.000 ₫
+                                    </h5>
+                                    <button type="button" class="btn btn-dark button-add">THÊM VÀO GIỎ</button>
                                 </div>
                             </div>
                             <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3 item-padding" >
                                 <div class="container gallery-container">
                                     <div class="gallery-img">
-                                        <img src="./imG/cora.1.png" alt="" class="gallery-img-banner">
+                                        <a href="./product.html" class="">
+                                            <img src="./img/image.jpg" alt="" class="gallery-img-banner">
+                                        </a>
                                     </div>
                                     <div class="item-favorite">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
                                             <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
                                           </svg>
                                     </div>
-                                    <span class="item-discount"> 20% </span>
-
-                                    <span class="card-title">HALMITON</span>
-                                    <span  class="card-title">AUTUNM</span>
-                                    <div class="discount-box">
-                                        <h5 class="card-title" style="color:rgba(0, 0, 0, 0.6) ;">
-                                            1.954.000 ₫
-                                        </h5>
-                                        <div class="title-discount">
-                                            <p class="card-title">2.299.000 đ </p>
-                                        </div>
-                                    </div>
-                                    
-                                    <a href="" class="gallery-btn">
-                                        <button type="button" class="btn btn-dark">XEM SẢN PHẨM</button>
-                                    </a>
+                                    <span class="card-title card-title-name">
+                                        <span class="card-title">
+                                            HALMITON
+                                        </span>
+                                        <span class="card-title">
+                                            GUNMETAL
+                                        </span>
+                                    </span>
+                                    <h5 class="card-title cart-title-price" style="color:rgba(0, 0, 0, 0.6) ;">
+                                        2.199.000 ₫
+                                    </h5>
+                                    <button type="button" class="btn btn-dark button-add">THÊM VÀO GIỎ</button>
                                 </div>
                             </div>
                             <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3 item-padding" >
                                 <div class="container gallery-container">
                                     <div class="gallery-img">
-                                        <img src="./imG/cora.1.png" alt="" class="gallery-img-banner">
+                                        <a href="./product.html" class="">
+                                            <img src="./img/v2.jpg" alt="" class="gallery-img-banner">
+                                        </a>
                                     </div>
                                     <div class="item-favorite">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
                                             <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
                                           </svg>
                                     </div>
-                                    <span class="item-discount"> 20% </span>
-
-                                    <span class="card-title">HALMITON</span>
-                                    <span  class="card-title">AUTUNM</span>
-                                    <div class="discount-box">
-                                        <h5 class="card-title" style="color:rgba(0, 0, 0, 0.6) ;">
-                                            1.954.000 ₫
-                                        </h5>
-                                        <div class="title-discount">
-                                            <p class="card-title">2.299.000 đ </p>
-                                        </div>
-                                    </div>
-                                    
-                                    <a href="" class="gallery-btn">
-                                        <button type="button" class="btn btn-dark">XEM SẢN PHẨM</button>
-                                    </a>
+                                    <span class="card-title card-title-name">
+                                        <span class="card-title">
+                                            CELIA 
+                                        </span>
+                                        <span class="card-title">
+                                            SILVER
+                                        </span>
+                                    </span>
+                                    <h5 class="card-title cart-title-price" style="color:rgba(0, 0, 0, 0.6) ;">
+                                        399.000 ₫
+                                    </h5>
+                                    <button type="button" class="btn btn-dark button-add">THÊM VÀO GIỎ</button>
                                 </div>
-                            </div>
+                            </div> 
                             <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3 item-padding" >
                                 <div class="container gallery-container">
                                     <div class="gallery-img">
-                                        <img src="./imG/cora.1.png" alt="" class="gallery-img-banner">
+                                        <a href="./product.html" class="">
+                                            <img src="./img/v1.jpg" alt="" class="gallery-img-banner">
+                                        </a>
                                     </div>
                                     <div class="item-favorite">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
                                             <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
                                           </svg>
                                     </div>
-                                    <span class="item-discount"> 20% </span>
-
-                                    <span class="card-title">HALMITON</span>
-                                    <span  class="card-title">AUTUNM</span>
-                                    <div class="discount-box">
-                                        <h5 class="card-title" style="color:rgba(0, 0, 0, 0.6) ;">
-                                            1.954.000 ₫
-                                        </h5>
-                                        <div class="title-discount">
-                                            <p class="card-title">2.299.000 đ </p>
-                                        </div>
-                                    </div>
-                                    
-                                    <a href="" class="gallery-btn">
-                                        <button type="button" class="btn btn-dark">XEM SẢN PHẨM</button>
-                                    </a>
+                                    <span class="card-title card-title-name">
+                                        <span class="card-title">
+                                            CELIA 
+                                        </span>
+                                        <span class="card-title">
+                                            GOLD
+                                        </span>
+                                    </span>
+                                    <h5 class="card-title cart-title-price" style="color:rgba(0, 0, 0, 0.6) ;">
+                                        399.000 ₫
+                                    </h5>
+                                    <button type="button" class="btn btn-dark button-add">THÊM VÀO GIỎ</button>
                                 </div>
-                            </div>
+                            </div> 
+                            <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3 item-padding" >
+                                <div class="container gallery-container">
+                                    <div class="gallery-img">
+                                        <a href="./product.html" class="">
+                                            <img src="./img/v2.jpg" alt="" class="gallery-img-banner">
+                                        </a>
+                                    </div>
+                                    <div class="item-favorite">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                                            <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                                          </svg>
+                                    </div>
+                                    <span class="card-title card-title-name">
+                                        <span class="card-title">
+                                            DORIS 
+                                        </span>
+                                        <span class="card-title">
+                                            GOLD
+                                        </span>
+                                    </span>
+                                    <h5 class="card-title cart-title-price" style="color:rgba(0, 0, 0, 0.6) ;">
+                                        399.000 ₫
+                                    </h5>
+                                    <button type="button" class="btn btn-dark button-add">THÊM VÀO GIỎ</button>
+                                </div>
+                            </div> 
+                            <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3 item-padding" >
+                                <div class="container gallery-container">
+                                    <div class="gallery-img">
+                                        <a href="./product.html" class="">
+                                            <img src="./img/V5.png" alt="" class="gallery-img-banner">
+                                        </a>
+                                    </div>
+                                    <div class="item-favorite">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                                            <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                                          </svg>
+                                    </div>
+                                    <span class="card-title card-title-name">
+                                        <span class="card-title">
+                                            DORIS 
+                                        </span>
+                                        <span class="card-title">
+                                            SILVER
+                                        </span>
+                                    </span>
+                                    <h5 class="card-title cart-title-price" style="color:rgba(0, 0, 0, 0.6) ;">
+                                        399.000 ₫
+                                    </h5>
+                                    <button type="button" class="btn btn-dark button-add">THÊM VÀO GIỎ</button>
+                                </div>
+                            </div> 
                         </div>
-                    </div>
                     
                 </div>
             </div>
