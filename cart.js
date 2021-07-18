@@ -1,9 +1,7 @@
 // Cart
 
 let cartBox = document.getElementById('mySidepanel');
-let btn = document.getElementsByClassName('item-favorite');
 let closeBrn = document.getElementsByClassName('closebtn');
-
 // Delete cart 
 let remove_cart = document.getElementsByClassName("btn-danger");
 for (let i = 0; i < remove_cart.length; i++) {
@@ -16,7 +14,7 @@ for (let i = 0; i < remove_cart.length; i++) {
 }
 
 // Add to cart 
-let add_cart = document.getElementsByClassName("item-favorite");
+let add_cart = document.getElementsByClassName("button-add");
 for (let i = 0; i < add_cart.length; i++) {
   let add = add_cart[i];
   add.addEventListener("click", function (event) {
@@ -28,9 +26,17 @@ for (let i = 0; i < add_cart.length; i++) {
     let price = product.getElementsByClassName("cart-title-price")[0].innerText;
     addItemToCart(title, price, img)
     // Khi thêm sản phẩm vào giỏ hàng thì sẽ hiển thị modal
+    let width = $(window).width();
+    if(width <= 500){
     cartBox.style.display = "block";
-    cartBox.style.width = "50%";
-    
+    // cartBox_none.style.display = "none";
+    cartBox.style.width = "100%";
+    } else{
+      cartBox.style.display = "block";
+      cartBox.style.width = "100%";
+      cartBox.style.backgroundColor = "white";
+    }
+
     updatecart()
   })
 }
@@ -88,20 +94,4 @@ function updatecart() {
   }
   document.getElementsByClassName("cart-total-price")[0].innerText = total + '.000 đ'
 }
-
-// Phan tram giam gia
-
-// let newNumber = document.getElementsByClassName('new-price')[0];
-// let oldNumber = document.getElementsByClassName('old-price')[0];
-
-// console.log(newNumber, oldNumber)
-
-// if(oldNumber.value == ""){
-//   discount.style.display = none;
-// } else{
-//   discount = (1-(newNumber/oldNumber))*100 ;
-//   discount.value = discount.toFixed(0) + "%"
-// }
-
-// console.log(newNumber, oldNumber, discount)
 

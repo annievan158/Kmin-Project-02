@@ -52,10 +52,18 @@ function showSlides(n) {
     slideshow[slideIndex-1].className += " active";
 }
 
+
 // Collapsed Sidepanel
 function openNav() {
-  document.getElementById("mySidepanel").style.display = "block";
-  document.getElementById("mySidepanel").style.width = "50%";
+  let width = $(window).width();
+  if(width <= 500){
+    document.getElementById("mySidepanel").style.display = "block";
+    document.getElementById("mySidepanel").style.width = "100%";
+  } else{
+    document.getElementById("mySidepanel").style.display = "block";
+    document.getElementById("mySidepanel").style.width = "50%";
+  }
+
 }
 
 function closeNav() {
