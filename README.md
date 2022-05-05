@@ -1,2 +1,6 @@
-# ECOMMERCE WEBSITE 
-'A final project of Kmin's Front-end class' 
+# CURNON PROJECT
+
+Curnon Project is the graduation project of Kmin class that using ReactJs
+> 
+> Link preview: https://curnon-website.herokuapp.com/
+> 
